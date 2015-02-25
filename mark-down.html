@@ -59,9 +59,7 @@ or alternatively:
         } else {
           var markedtext = marked(this.text);
           if (this.singleline) {
-            //remove <p> & </p> tags
             markedtext = markedtext.replace(/<p>/gi,'').replace(/<\/p>/gi,'');
-            console.log(markedtext);
           }
           this.$.markdown.innerHTML = markedtext;
         }
